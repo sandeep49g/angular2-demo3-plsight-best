@@ -32,6 +32,16 @@ export class ProductListComponent implements OnInit {
 
     onRatingClicked(message: string): void {
         this.pageTitle = 'Product List: ' + message;
+        this.filteredProducts = [{
+          "productId": 5,
+          "productName": "Hammer",
+          "productCode": "TBX-0048",
+          "releaseDate": "May 21, 2016",
+          "description": "Curved claw steel hammer",
+          "price": 8.9,
+          "starRating": 4.8,
+          "imageUrl": "https://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
+      }];
     }
 
     performFilter(filterBy: string): IProduct[] {
